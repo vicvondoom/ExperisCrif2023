@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncAwait2", "AsyncAwait2\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncAwait3", "AsyncAwait3\AsyncAwait3.csproj", "{30B254DF-F805-4DD3-A222-87AF13CD091B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionsMethods", "ExtensionsMethods\ExtensionsMethods.csproj", "{A18116AA-E8AC-4482-ACA3-E8CF23A81738}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{30B254DF-F805-4DD3-A222-87AF13CD091B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30B254DF-F805-4DD3-A222-87AF13CD091B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30B254DF-F805-4DD3-A222-87AF13CD091B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A18116AA-E8AC-4482-ACA3-E8CF23A81738}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A18116AA-E8AC-4482-ACA3-E8CF23A81738}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A18116AA-E8AC-4482-ACA3-E8CF23A81738}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A18116AA-E8AC-4482-ACA3-E8CF23A81738}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
