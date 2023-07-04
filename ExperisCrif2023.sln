@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncAwait3", "AsyncAwait3\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionsMethods", "ExtensionsMethods\ExtensionsMethods.csproj", "{A18116AA-E8AC-4482-ACA3-E8CF23A81738}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternSingleton", "PatternSingleton\PatternSingleton.csproj", "{2244841F-0081-47A3-B14E-7C7FD3DA9CF4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{A18116AA-E8AC-4482-ACA3-E8CF23A81738}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A18116AA-E8AC-4482-ACA3-E8CF23A81738}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A18116AA-E8AC-4482-ACA3-E8CF23A81738}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2244841F-0081-47A3-B14E-7C7FD3DA9CF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2244841F-0081-47A3-B14E-7C7FD3DA9CF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2244841F-0081-47A3-B14E-7C7FD3DA9CF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2244841F-0081-47A3-B14E-7C7FD3DA9CF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
