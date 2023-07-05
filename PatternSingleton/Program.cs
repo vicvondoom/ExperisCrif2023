@@ -19,6 +19,9 @@
             ConfigFile cf = new ConfigFile();
             username = cf.Username;
             password = cf.Password;
+            // ma anche qui, qualcuno può modificare il file di config e mi trovo comportamenti
+            // del software inattesi
+
 
             // Allora uso un Singleton
             //SingletonConfig sc = new SingletonConfig(); // è privato il costruttore, non posso istanziarlo direttamente!
@@ -27,10 +30,11 @@
             password = sc1.Password;
 
 
-            // In altro punto del codice cosa succede?
+            // In altro punto del codice cosa succede? Se mi cambiano il file?
             SingletonConfig sc2 = SingletonConfig.Instance;
             username = sc2.Username;
             password = sc2.Password;
+            // Tutto a posto, finchè riavvio l'app e allora rilegge il file
 
         }
     }
