@@ -31,6 +31,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatternSingleton", "Pattern
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternFactory", "PatternFactory\PatternFactory.csproj", "{0FBC9DAB-F515-4A6F-9070-F7B3AD9323B9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IniezioneDipendenze", "IniezioneDipendenze\IniezioneDipendenze.csproj", "{F401D440-4546-44AB-8AE3-EFD9122BD323}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternDecorator", "PatternDecorator\PatternDecorator.csproj", "{83B732E3-792E-41CB-BC03-F8230B507857}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +97,14 @@ Global
 		{0FBC9DAB-F515-4A6F-9070-F7B3AD9323B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FBC9DAB-F515-4A6F-9070-F7B3AD9323B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FBC9DAB-F515-4A6F-9070-F7B3AD9323B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F401D440-4546-44AB-8AE3-EFD9122BD323}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F401D440-4546-44AB-8AE3-EFD9122BD323}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F401D440-4546-44AB-8AE3-EFD9122BD323}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F401D440-4546-44AB-8AE3-EFD9122BD323}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83B732E3-792E-41CB-BC03-F8230B507857}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83B732E3-792E-41CB-BC03-F8230B507857}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83B732E3-792E-41CB-BC03-F8230B507857}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83B732E3-792E-41CB-BC03-F8230B507857}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

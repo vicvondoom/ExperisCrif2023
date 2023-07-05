@@ -14,6 +14,7 @@
             //Rettangolo r1 = new Rettangolo(2);
 
             // Allora uso la factory
+            // la factory centralizza le 'new'
             FabbricaFigure fab = new FabbricaFigure();
             Cerchio c1 = (Cerchio)fab.getFigura(TipoFigura.Cerchio);
             Rettangolo ret1 = (Rettangolo)fab.getFigura(TipoFigura.Rettangolo);
