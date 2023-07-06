@@ -23,6 +23,7 @@
             cobram.EseguiPratica("JJ44RR");
             cobram.EseguiPratica("YY99XX");
 
+
         }
 
         // Questo metodo deve combaciare come tipo ritornato e tipi passati con il delegato!

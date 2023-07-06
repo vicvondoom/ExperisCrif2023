@@ -42,6 +42,12 @@
             foreach(var figura in figure)
             {
                 figura.disegna();
+                // Se volessi sapere 'figura' di che tipo è:
+                if(figura is Quadrato)
+                {
+                    Quadrato q = (Quadrato)figura;
+
+                }
             }
 
         }
