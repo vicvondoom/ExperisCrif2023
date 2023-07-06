@@ -19,11 +19,11 @@
             // che tipo usano al loro interno
             // il parametro, tra le angolari, è un tipo di dato!
 
-            Bidone<int> intero = new Bidone<int>(13);
-            Console.WriteLine("Contenuto: " + intero.Contenuto);
+            //Bidone<int> intero = new Bidone<int>(13);
+            //Console.WriteLine("Contenuto: " + intero.Contenuto);
 
-            Bidone<string> parola = new Bidone<string>("Ciao!");
-            Console.WriteLine("Contenuto: " + parola.Contenuto);
+            //Bidone<string> parola = new Bidone<string>("Ciao!");
+            //Console.WriteLine("Contenuto: " + parola.Contenuto);
 
             int[] numeri2 = { 1, 2, 3, 4, 5 };
             Bidone<int[]> bidonenumeri = new Bidone<int[]>(numeri2);
