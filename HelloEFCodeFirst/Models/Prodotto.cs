@@ -18,6 +18,7 @@ namespace HelloEFCodeFirst.Models
         public int Id { get; set; }
 
         [Required]
+        [MaxLength(3)]
         public string Codice { get; set; }
 
 

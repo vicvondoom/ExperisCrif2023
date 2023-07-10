@@ -9,22 +9,22 @@ namespace HelloEFCodeFirst
             // Istanzio il db context
             AziendaContext ctx = new AziendaContext();
 
-            // Creo una categoria
-            Categoria categoria = new Categoria();
-            categoria.Descrizione = "Bevande";
-            ctx.Categorie.Add(categoria);
-            //ctx.Add(categoria);
-            ctx.SaveChanges();
-            // Dop oquesta SaveChanges trovo l'ID PK valorizzato!
+            //// Creo una categoria
+            //Categoria categoria = new Categoria();
+            //categoria.Descrizione = "Bevande";
+            //ctx.Categorie.Add(categoria);
+            ////ctx.Add(categoria);
+            //ctx.SaveChanges();
+            //// Dopo questa SaveChanges trovo l'ID PK valorizzato!
 
-            // Creo un prodotto e lo metto in una categoria
-            Prodotto p = new Prodotto();
-            p.Codice = "001";
-            p.Descrizione = "Coca Cola";
-            p.Prezzo = 2.5;
-            p.ID_Categoria = categoria.Id;
-            ctx.Prodotti.Add(p);
-            ctx.SaveChanges();
+            //// Creo un prodotto e lo metto in una categoria
+            //Prodotto p = new Prodotto();
+            //p.Codice = "001";
+            //p.Descrizione = "Coca Cola";
+            //p.Prezzo = 2.5;
+            //p.ID_Categoria = categoria.Id;
+            //ctx.Prodotti.Add(p);
+            //ctx.SaveChanges();
 
 
 
