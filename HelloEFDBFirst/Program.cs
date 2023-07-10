@@ -8,8 +8,8 @@ namespace HelloEFDBFirst
         {
             HelloEfdbfirstContext ctx = new HelloEfdbfirstContext();
 
-            // INSERT
-            // Creo un istanza di una classe
+            //// INSERT
+            //// Creo un istanza di una classe
             //Persone p = new Persone();
             //p.Nome = "Piermatteo";
             //p.Cognome = "Semenzara";
@@ -20,14 +20,18 @@ namespace HelloEFDBFirst
             //// UPDATE
             //// Linq ('calboni' è un istanza di tipo Persone)
             //var calboni = (from c in ctx.Persones
-            //              where c.Id == 3       // Noi cerchiamo per chiave primaria
-            //              select c).First();             // Siam sicurissimi che ce ne restituisce uno!
-            //calboni.Nome = "Renato";
-            //ctx.SaveChanges();
+            //               where c.Id == 3       // Noi cerchiamo per chiave primaria
+            //               select c).FirstOrDefault();             // Siam sicurissimi che ce ne restituisce uno!
+            //// Se non son sicuro che quella chiave primaria esista, al fondo devo mettere .FirstOrDefault();
+            //if(calboni != null )
+            //{
+            //    calboni.Nome = "Renato";
+            //    ctx.SaveChanges();
+            //}
 
-            // DELETE
+            //// DELETE
             //var tizio_da_eliminare = (from c in ctx.Persones
-            //                          where c.Id==5
+            //                          where c.Id == 5
             //                          select c).First();
 
             //ctx.Persones.Remove(tizio_da_eliminare);
@@ -35,6 +39,7 @@ namespace HelloEFDBFirst
 
             // SELECT
             var elenco = from p in ctx.Persones select p;
+            elenco = ctx.Persones;
             foreach (var p in elenco)
                 Console.WriteLine($"{p.Id}\t{p.Nome}\t{p.Cognome}");
 
