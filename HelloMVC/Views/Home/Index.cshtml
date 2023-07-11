@@ -3,6 +3,24 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Buongiorno!</h1>
+    
+    Nome: @ViewBag.Nome<br />
+    Cognome: @ViewBag.Cognome<br />
+    <br />
+    <p>Dati impiegato:</p>
+    Nome: @ViewBag.Impiegato.Nome<br />
+    Cognome: @ViewBag.Impiegato.Cognome
+
+    <!-- Se voglio sfruttare l'Intellisense: -->
+    @{
+        Persona p = (Persona)ViewBag.Impiegato;
+    }
+    <p>Dati impiegato (dal cast)</p>
+    Nome: @p.Nome<br />
+    Cognome: @p.Cognome<br />
+    <br />
+    Numero: @ViewData["Numero"]
+
+
 </div>

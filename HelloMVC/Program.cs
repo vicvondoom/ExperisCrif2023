@@ -28,7 +28,7 @@ namespace HelloMVC
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Privacy}/{id?}");
+                pattern: "{controller=Login}/{action=Index}/{id?}");
 
             app.Run();
         }

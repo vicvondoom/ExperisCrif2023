@@ -1,0 +1,8 @@
+﻿@model List<Persona>
+@* Qui sopra dichiaro che questa pagina accetta quel tipo di oggetto lì*@
+
+@foreach(var e in Model) 
+{
+    // 'Model' contiene l'oggetto 'direttori' passato dal controller!
+    <p>Nome: @e.Nome, Cognome: @e.Cognome</p>
+}
