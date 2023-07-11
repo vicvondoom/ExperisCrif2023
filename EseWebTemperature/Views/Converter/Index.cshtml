@@ -1,0 +1,28 @@
+﻿@model EseWebTemperature.Models.TempViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h4>Convertitore  Celsius - Fahrenheit</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Index">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Celsius" class="control-label"></label>
+                <input asp-for="Celsius" class="form-control" />
+                <span asp-validation-for="Celsius" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+        @ViewBag.Messaggio
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
