@@ -1,0 +1,54 @@
+﻿@model NegozioCellulariWeb.Models.Cellulare
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h4>Nuovo cellulare</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <!-- 1) Specificare il tipo di passagio dati -->
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Tipo" class="control-label"></label>
+                <!-- 2) Caricare la select coi valori dell'enumerativo -->
+                <select asp-for="Tipo" class="form-control" asp-items="Html.GetEnumSelectList<TipoCellulare>()"></select>
+                <span asp-validation-for="Tipo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Modello" class="control-label"></label>
+                <input asp-for="Modello" class="form-control" />
+                <span asp-validation-for="Modello" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Prezzo" class="control-label"></label>
+                <input asp-for="Prezzo" class="form-control" />
+                <span asp-validation-for="Prezzo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataAcquisto" class="control-label"></label>
+                <input asp-for="DataAcquisto" class="form-control" />
+                <span asp-validation-for="DataAcquisto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <!-- 3) Sostituire il campo con quello di tipo IFormFile -->
+                <label asp-for="FileImmagine" class="control-label"></label>
+                <input asp-for="FileImmagine" class="form-control" />
+                <span asp-validation-for="FileImmagine" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Salva" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -16,7 +16,7 @@ namespace NegozioMusicaWeb.Models
         public string Artista { get; set; }
 
         [Required(ErrorMessage = "{0} è obbligatorio!")]
-        [Range(1945, 2024, ErrorMessage ="{0} deve stare fra {1} e {2}!")]
+        [Range(1945, 2045, ErrorMessage ="{0} deve stare fra {1} e {2}!")]
         [Display(Name ="Anno di uscita")]
         public int AnnoUscita { get; set; }
     }

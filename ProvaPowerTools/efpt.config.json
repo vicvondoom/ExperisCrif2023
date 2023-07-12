@@ -1,0 +1,62 @@
+﻿{
+   "CodeGenerationMode": 2,
+   "ContextClassName": "AziendaContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "Models",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "ProvaPowerTools",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "Name": "[dbo].[Aliquote]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Fatture]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[tbUtenti]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[getTotalePerAnno]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[getTotalePerAnno2]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[east_or_west]",
+         "ObjectType": 2
+      }
+   ],
+   "UiHint": "davideorlan17bb.Azienda.dbo",
+   "UncountableWords": null,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": true,
+   "UseDateOnlyTimeOnly": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": false,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSchemaNamespaces": false,
+   "UseSpatial": false,
+   "UseT4": false
+}

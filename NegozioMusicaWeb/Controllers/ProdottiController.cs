@@ -18,6 +18,11 @@ namespace NegozioMusicaWeb.Controllers
             _context = context;
         }
 
+        //// Versione sincrona
+        //public IActionResult Index()
+        //{
+        //    return View(_context.Prodotti.ToList());
+        //}
         // GET: Prodotti
         public async Task<IActionResult> Index()
         {

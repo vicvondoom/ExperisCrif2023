@@ -1,9 +1,7 @@
+using Microsoft.EntityFrameworkCore;
+using NegozioCellulariWeb.Models;
 
-
-using Microsoft.AspNetCore.Mvc.ModelBinding;
-using System.Globalization;
-
-namespace EseWebTemperature
+namespace NegozioCellulariWeb
 {
     public class Program
     {
@@ -13,6 +11,11 @@ namespace EseWebTemperature
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            string cnStr = builder.Configuration.GetConnectionString("Default");
+            builder.Services.AddDbContext<NegozioCellulariContext>(opt =>
+                opt.UseSqlServer(cnStr)
+            );
 
             var app = builder.Build();
 
@@ -33,12 +36,7 @@ namespace EseWebTemperature
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Converter}/{action=Index}/{id?}");
-
-            //Culture specific problems
-            var cultureInfo = new CultureInfo("it-IT");
-            cultureInfo.NumberFormat.NumberDecimalSeparator = ".";
-            System.Threading.Thread.CurrentThread.CurrentUICulture = cultureInfo;
+                pattern: "{controller=Cellulari}/{action=Index}/{id?}");
 
             app.Run();
         }
