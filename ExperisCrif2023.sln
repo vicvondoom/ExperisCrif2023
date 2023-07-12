@@ -47,7 +47,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloEFCodeFirst", "HelloEF
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloMVC", "HelloMVC\HelloMVC.csproj", "{BEDA219B-146D-4D93-9774-FE2A38347B02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EseWebTemperature", "EseWebTemperature\EseWebTemperature.csproj", "{D1ADDE9B-DD1A-451E-9127-14B892982388}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EseWebTemperature", "EseWebTemperature\EseWebTemperature.csproj", "{D1ADDE9B-DD1A-451E-9127-14B892982388}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NegozioMusicaWeb", "NegozioMusicaWeb\NegozioMusicaWeb.csproj", "{87918529-6AFE-4470-8FBF-ABD562D18117}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -147,6 +149,10 @@ Global
 		{D1ADDE9B-DD1A-451E-9127-14B892982388}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1ADDE9B-DD1A-451E-9127-14B892982388}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1ADDE9B-DD1A-451E-9127-14B892982388}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87918529-6AFE-4470-8FBF-ABD562D18117}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87918529-6AFE-4470-8FBF-ABD562D18117}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87918529-6AFE-4470-8FBF-ABD562D18117}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87918529-6AFE-4470-8FBF-ABD562D18117}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
