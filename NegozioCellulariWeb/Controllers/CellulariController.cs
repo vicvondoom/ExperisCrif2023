@@ -20,11 +20,21 @@ namespace NegozioCellulariWeb.Controllers
         }
 
         // GET: Cellulari
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string modello, int? prezzo_da, int? prezzo_a)
         {
-              return _context.Cellulari != null ? 
-                          View(await _context.Cellulari.ToListAsync()) :
-                          Problem("Entity set 'NegozioCellulariContext.Cellulari'  is null.");
+
+            var cellulari = await _context.Cellulari.ToListAsync();
+
+            if (modello != null)
+                cellulari = cellulari.Where(c => c.Modello.Contains(modello)).ToList();
+
+            if(prezzo_da.HasValue)
+                cellulari = cellulari.Where(c => c.Prezzo >= prezzo_da).ToList();
+
+            if(prezzo_a.HasValue)
+                cellulari = cellulari.Where(c => c.Prezzo <= prezzo_a).ToList();
+
+            return View(cellulari);
         }
 
         // GET: Cellulari/Details/5

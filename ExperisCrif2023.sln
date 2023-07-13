@@ -49,11 +49,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloMVC", "HelloMVC\HelloM
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EseWebTemperature", "EseWebTemperature\EseWebTemperature.csproj", "{D1ADDE9B-DD1A-451E-9127-14B892982388}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NegozioMusicaWeb", "NegozioMusicaWeb\NegozioMusicaWeb.csproj", "{87918529-6AFE-4470-8FBF-ABD562D18117}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NegozioMusicaWeb", "NegozioMusicaWeb\NegozioMusicaWeb.csproj", "{87918529-6AFE-4470-8FBF-ABD562D18117}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProvaPowerTools", "ProvaPowerTools\ProvaPowerTools.csproj", "{43CA92D8-4A0D-45A8-BF5C-A99F27B37DC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProvaPowerTools", "ProvaPowerTools\ProvaPowerTools.csproj", "{43CA92D8-4A0D-45A8-BF5C-A99F27B37DC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NegozioCellulariWeb", "NegozioCellulariWeb\NegozioCellulariWeb.csproj", "{53D25420-E64F-4F69-9D8A-C50705C143AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NegozioCellulariWeb", "NegozioCellulariWeb\NegozioCellulariWeb.csproj", "{53D25420-E64F-4F69-9D8A-C50705C143AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibliotecaWeb", "BibliotecaWeb\BibliotecaWeb.csproj", "{A3901CD2-CC37-4317-86EB-7BDF43A30A83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogWeb", "LogWeb\LogWeb.csproj", "{DD82CA7D-8E0B-4142-8E8D-50965FCE3FF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerilogWeb", "SerilogWeb\SerilogWeb.csproj", "{836D1E1C-C5B2-43CA-BFD1-3EE3347C7BD0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -165,6 +171,18 @@ Global
 		{53D25420-E64F-4F69-9D8A-C50705C143AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53D25420-E64F-4F69-9D8A-C50705C143AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53D25420-E64F-4F69-9D8A-C50705C143AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3901CD2-CC37-4317-86EB-7BDF43A30A83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3901CD2-CC37-4317-86EB-7BDF43A30A83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3901CD2-CC37-4317-86EB-7BDF43A30A83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3901CD2-CC37-4317-86EB-7BDF43A30A83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD82CA7D-8E0B-4142-8E8D-50965FCE3FF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD82CA7D-8E0B-4142-8E8D-50965FCE3FF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD82CA7D-8E0B-4142-8E8D-50965FCE3FF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD82CA7D-8E0B-4142-8E8D-50965FCE3FF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{836D1E1C-C5B2-43CA-BFD1-3EE3347C7BD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{836D1E1C-C5B2-43CA-BFD1-3EE3347C7BD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{836D1E1C-C5B2-43CA-BFD1-3EE3347C7BD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{836D1E1C-C5B2-43CA-BFD1-3EE3347C7BD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

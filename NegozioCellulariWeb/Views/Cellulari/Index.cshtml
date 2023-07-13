@@ -9,6 +9,25 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+
+<!-- Form per filtrare i risultati -->
+<form asp-action ="Index" method="get">
+    <div class="row">
+        <div class="col">
+            <input type="text" class="form-control" placeholder="modello" name="modello">
+        </div>
+        <div class="col">
+            <input type="number" class="form-control" placeholder="prezzo da" name="prezzo_da">
+        </div>
+        <div class="col">
+            <input type="number" class="form-control" placeholder="prezzo a" name="prezzo_a">
+        </div>
+        <div class="col">
+            <input type="submit" value="Cerca" class="btn-primary btn-primary" />
+        </div>
+    </div>
+</form>
+
 <table class="table">
     <thead>
         <tr>
