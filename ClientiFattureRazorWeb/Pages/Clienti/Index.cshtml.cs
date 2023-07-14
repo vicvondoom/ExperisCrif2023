@@ -1,0 +1,31 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
+using ClientiFattureRazorWeb.Models;
+
+namespace ClientiFattureRazorWeb.Pages.Clienti
+{
+    public class IndexModel : PageModel
+    {
+        private readonly ClientiFattureRazorWeb.Models.CFContext _context;
+
+        public IndexModel(ClientiFattureRazorWeb.Models.CFContext context)
+        {
+            _context = context;
+        }
+
+        public IList<Cliente> Cliente { get;set; } = default!;
+
+        public async Task OnGetAsync()
+        {
+            if (_context.Clienti != null)
+            {
+                Cliente = await _context.Clienti.ToListAsync();
+            }
+        }
+    }
+}

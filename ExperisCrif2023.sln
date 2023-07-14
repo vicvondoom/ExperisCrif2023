@@ -55,11 +55,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProvaPowerTools", "ProvaPow
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NegozioCellulariWeb", "NegozioCellulariWeb\NegozioCellulariWeb.csproj", "{53D25420-E64F-4F69-9D8A-C50705C143AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibliotecaWeb", "BibliotecaWeb\BibliotecaWeb.csproj", "{A3901CD2-CC37-4317-86EB-7BDF43A30A83}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BibliotecaWeb", "BibliotecaWeb\BibliotecaWeb.csproj", "{A3901CD2-CC37-4317-86EB-7BDF43A30A83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogWeb", "LogWeb\LogWeb.csproj", "{DD82CA7D-8E0B-4142-8E8D-50965FCE3FF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogWeb", "LogWeb\LogWeb.csproj", "{DD82CA7D-8E0B-4142-8E8D-50965FCE3FF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerilogWeb", "SerilogWeb\SerilogWeb.csproj", "{836D1E1C-C5B2-43CA-BFD1-3EE3347C7BD0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SerilogWeb", "SerilogWeb\SerilogWeb.csproj", "{836D1E1C-C5B2-43CA-BFD1-3EE3347C7BD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloRazorPages", "HelloRazorPages\HelloRazorPages.csproj", "{CCD07978-6448-435F-AFB6-EDB399B6D0BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientiFattureRazorWeb", "ClientiFattureRazorWeb\ClientiFattureRazorWeb.csproj", "{CAFA72C3-5C59-4538-900D-7A965751158C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloIdentityWeb", "HelloIdentityWeb\HelloIdentityWeb.csproj", "{FB109742-1F83-47F5-984D-8401967CF6A8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -183,6 +189,18 @@ Global
 		{836D1E1C-C5B2-43CA-BFD1-3EE3347C7BD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{836D1E1C-C5B2-43CA-BFD1-3EE3347C7BD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{836D1E1C-C5B2-43CA-BFD1-3EE3347C7BD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCD07978-6448-435F-AFB6-EDB399B6D0BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCD07978-6448-435F-AFB6-EDB399B6D0BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCD07978-6448-435F-AFB6-EDB399B6D0BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCD07978-6448-435F-AFB6-EDB399B6D0BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAFA72C3-5C59-4538-900D-7A965751158C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAFA72C3-5C59-4538-900D-7A965751158C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAFA72C3-5C59-4538-900D-7A965751158C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAFA72C3-5C59-4538-900D-7A965751158C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB109742-1F83-47F5-984D-8401967CF6A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB109742-1F83-47F5-984D-8401967CF6A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB109742-1F83-47F5-984D-8401967CF6A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB109742-1F83-47F5-984D-8401967CF6A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

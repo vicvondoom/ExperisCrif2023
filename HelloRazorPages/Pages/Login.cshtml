@@ -1,0 +1,22 @@
+﻿ @page
+@model HelloRazorPages.Pages.LoginModel
+@{
+}
+
+<h3>Inserisci login e password</h3>
+
+<form method="post">
+    <label asp-for="lvm.Email" class="form-label"></label>
+    <input asp-for="lvm.Email" class="form-control" />
+    <span asp-validation-for="lvm.Email" class="text-danger"></span>
+    <br />
+    <label asp-for="lvm.Password" class="form-label"></label>
+    <input asp-for="lvm.Password" class="form-control" />
+    <span asp-validation-for="lvm.Password" class="text-danger"></span>
+    <br />
+    <input type="submit" value="Login" class="btn btn-primary" />
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
