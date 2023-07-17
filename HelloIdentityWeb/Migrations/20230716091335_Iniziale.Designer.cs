@@ -9,11 +9,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace HelloIdentityWeb.Data.Migrations
+namespace HelloIdentityWeb.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230714154510_MigrationMateriali")]
-    partial class MigrationMateriali
+    [Migration("20230716091335_Iniziale")]
+    partial class Iniziale
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

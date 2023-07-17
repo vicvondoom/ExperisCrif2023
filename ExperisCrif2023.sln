@@ -61,11 +61,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogWeb", "LogWeb\LogWeb.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SerilogWeb", "SerilogWeb\SerilogWeb.csproj", "{836D1E1C-C5B2-43CA-BFD1-3EE3347C7BD0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloRazorPages", "HelloRazorPages\HelloRazorPages.csproj", "{CCD07978-6448-435F-AFB6-EDB399B6D0BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloRazorPages", "HelloRazorPages\HelloRazorPages.csproj", "{CCD07978-6448-435F-AFB6-EDB399B6D0BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientiFattureRazorWeb", "ClientiFattureRazorWeb\ClientiFattureRazorWeb.csproj", "{CAFA72C3-5C59-4538-900D-7A965751158C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientiFattureRazorWeb", "ClientiFattureRazorWeb\ClientiFattureRazorWeb.csproj", "{CAFA72C3-5C59-4538-900D-7A965751158C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloIdentityWeb", "HelloIdentityWeb\HelloIdentityWeb.csproj", "{FB109742-1F83-47F5-984D-8401967CF6A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloIdentityWeb", "HelloIdentityWeb\HelloIdentityWeb.csproj", "{FB109742-1F83-47F5-984D-8401967CF6A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomIdentity", "CustomIdentity\CustomIdentity.csproj", "{A48E25A5-BE0B-4634-BFE3-0D8021754A0A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -201,6 +203,10 @@ Global
 		{FB109742-1F83-47F5-984D-8401967CF6A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB109742-1F83-47F5-984D-8401967CF6A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB109742-1F83-47F5-984D-8401967CF6A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A48E25A5-BE0B-4634-BFE3-0D8021754A0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A48E25A5-BE0B-4634-BFE3-0D8021754A0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A48E25A5-BE0B-4634-BFE3-0D8021754A0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A48E25A5-BE0B-4634-BFE3-0D8021754A0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

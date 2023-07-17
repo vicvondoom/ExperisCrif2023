@@ -9,7 +9,7 @@ namespace HelloRazorPages.Models
         public string Email { get; set; }
 
         [Required(ErrorMessage = "{0} è obbligatoria!")]
-        [DataType(DataType.Password)]
+        [DataType(DataType.Password)] // Fà apparire i pallini invece che i caratteri
         public string Password { get; set; }
     }
 }

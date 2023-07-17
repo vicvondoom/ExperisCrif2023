@@ -19,17 +19,18 @@ namespace SerilogWeb
 
             // file di serilog
             string file = Path.Combine(builder.Environment.ContentRootPath, "wwwroot", "logs", "log.txt");
+
+            MSSqlServerSinkOptions so = new MSSqlServerSinkOptions();
+            so.TableName = "tbLogs";
+            so.AutoCreateSqlTable = true;
+
             builder.Host.UseSerilog(
                 (ctx, lc) =>
                 lc.MinimumLevel.Debug() //gli dico di loggare da Debug in sù dei miei eventi!
                 .MinimumLevel.Override("Microsoft", Serilog.Events.LogEventLevel.Error) // per Microsoft logga solo da Error in sù
                 .WriteTo.File(file, rollingInterval: RollingInterval.Day)
                 .WriteTo.MSSqlServer(connString,
-                sinkOptions: new MSSqlServerSinkOptions
-                {
-                    TableName="tbLogs",
-                    AutoCreateSqlTable = true,
-                },
+                so,
                 columnOptions: opt
                 )
             );

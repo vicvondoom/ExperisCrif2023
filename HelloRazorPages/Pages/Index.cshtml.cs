@@ -14,7 +14,7 @@ namespace HelloRazorPages.Pages
 
         public void OnGet()
         {
-
+            // Eventuale Codice avvio pagina
         }
 
         public void OnPost()
