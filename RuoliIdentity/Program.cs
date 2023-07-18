@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 using RuoliIdentity.Data;
+using RuoliIdentity.Models;
 
 namespace RuoliIdentity
 {
@@ -14,7 +16,6 @@ namespace RuoliIdentity
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(connectionString));
-            builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
             //builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
             //    .AddEntityFrameworkStores<ApplicationDbContext>();
@@ -26,6 +27,10 @@ namespace RuoliIdentity
 
             builder.Services.AddControllersWithViews();
             builder.Services.AddRazorPages();
+
+            //Inietto anche il fake EmailSender
+            builder.Services.AddScoped<IEmailSender, EmailSender>(opt =>
+                new EmailSender());
 
             var app = builder.Build();
 
