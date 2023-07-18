@@ -67,9 +67,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientiFattureRazorWeb", "C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloIdentityWeb", "HelloIdentityWeb\HelloIdentityWeb.csproj", "{FB109742-1F83-47F5-984D-8401967CF6A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomIdentity", "CustomIdentity\CustomIdentity.csproj", "{A48E25A5-BE0B-4634-BFE3-0D8021754A0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomIdentity", "CustomIdentity\CustomIdentity.csproj", "{A48E25A5-BE0B-4634-BFE3-0D8021754A0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuoliIdentity", "RuoliIdentity\RuoliIdentity.csproj", "{23784C91-2007-4CF1-B091-A2562C7D2A96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RuoliIdentity", "RuoliIdentity\RuoliIdentity.csproj", "{23784C91-2007-4CF1-B091-A2562C7D2A96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloAPI", "HelloAPI\HelloAPI.csproj", "{60EB73EE-7AF7-42D1-B200-D6B200756A60}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -213,6 +215,10 @@ Global
 		{23784C91-2007-4CF1-B091-A2562C7D2A96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23784C91-2007-4CF1-B091-A2562C7D2A96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23784C91-2007-4CF1-B091-A2562C7D2A96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60EB73EE-7AF7-42D1-B200-D6B200756A60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60EB73EE-7AF7-42D1-B200-D6B200756A60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60EB73EE-7AF7-42D1-B200-D6B200756A60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60EB73EE-7AF7-42D1-B200-D6B200756A60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
