@@ -71,7 +71,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomIdentity", "CustomIde
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RuoliIdentity", "RuoliIdentity\RuoliIdentity.csproj", "{23784C91-2007-4CF1-B091-A2562C7D2A96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloAPI", "HelloAPI\HelloAPI.csproj", "{60EB73EE-7AF7-42D1-B200-D6B200756A60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloAPI", "HelloAPI\HelloAPI.csproj", "{60EB73EE-7AF7-42D1-B200-D6B200756A60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibliotecaAPI", "BibliotecaAPI\BibliotecaAPI.csproj", "{CBC9A0D8-C2E0-469E-B98E-AABAF05792D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientBiblioteca", "ClientBiblioteca\ClientBiblioteca.csproj", "{12E62795-7297-48D5-A0FD-EA836B568FDC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -219,6 +223,14 @@ Global
 		{60EB73EE-7AF7-42D1-B200-D6B200756A60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60EB73EE-7AF7-42D1-B200-D6B200756A60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60EB73EE-7AF7-42D1-B200-D6B200756A60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBC9A0D8-C2E0-469E-B98E-AABAF05792D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBC9A0D8-C2E0-469E-B98E-AABAF05792D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBC9A0D8-C2E0-469E-B98E-AABAF05792D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBC9A0D8-C2E0-469E-B98E-AABAF05792D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12E62795-7297-48D5-A0FD-EA836B568FDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12E62795-7297-48D5-A0FD-EA836B568FDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12E62795-7297-48D5-A0FD-EA836B568FDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12E62795-7297-48D5-A0FD-EA836B568FDC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
