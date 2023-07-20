@@ -1,0 +1,15 @@
+﻿@page "/nuova"
+
+<h3>Mia pagina nuova di prova</h3>
+
+<p>Nome: @Nome</p>
+
+
+@code {
+    private string Nome;
+
+    protected override async Task OnInitializedAsync()
+    {
+        Nome = "Davide Orlando";
+    }
+}

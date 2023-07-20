@@ -1,0 +1,48 @@
+﻿@page "/autori"
+@using BiblioBlazorServer.Models;
+@inject BibliotecaDbContext ctx;
+@inject IJSRuntime js;
+
+<h3>Elenco Autori</h3>
+
+<table class="table">
+    <tr>
+        <th>Nome</th>
+        <th>Cognome</th>
+        <th></th>
+    </tr>
+    @foreach(var a in autori)
+    {
+        <tr>
+            <td>@a.Nome</td>
+            <td>@a.Cognome</td>
+            <th>
+                <button type="button" class="small btn btn-outline-danger" 
+                    @onclick="( () => Elimina(a.Id) )">Elimina</button>
+            </th>
+        </tr>
+    }
+</table>
+
+@code {
+    List<Autori> autori = new List<Autori>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        autori = ctx.Autoris.ToList();
+    }
+
+    private async Task Elimina(int id)
+    {
+        bool res = await js.InvokeAsync<bool>("confirm", "Vuoi eliminare questo record?");
+        if(res)
+        {
+            var autore_delete = ctx.Autoris.Find(id);
+            ctx.Autoris.Remove(autore_delete);
+            await ctx.SaveChangesAsync();
+            await js.InvokeVoidAsync("alert", "Autore eliminato con successo!");
+            await OnInitializedAsync();
+        }
+
+    }
+}

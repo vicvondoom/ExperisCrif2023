@@ -1,0 +1,35 @@
+﻿@page "/nuovoautore"
+@using BiblioBlazorServer.Models;
+@inject BibliotecaDbContext ctx;
+@inject IJSRuntime js;
+@inject NavigationManager nm;
+
+<h3>Nuovo Autore</h3>
+
+<EditForm Model="@aut" OnValidSubmit="@Aggiungi">
+    <div class="form-group">
+        <label>Nome:</label>
+        <InputText @bind-Value="@aut.Nome" />
+    </div>
+    <div class="form-group">
+        <label>Cognome:</label>
+        <InputText @bind-Value="@aut.Cognome" />
+    </div>
+    <button type="submit" class="btn btn-success">Salva</button>
+</EditForm>
+
+
+@code {
+
+    public Autori aut { get; set; } = new();
+
+    public async Task Aggiungi()
+    {
+        ctx.Autoris.Add(aut);
+        await ctx.SaveChangesAsync();
+
+        //Chiamo una funzione javascript che non ritorna nulla..
+        await js.InvokeVoidAsync("alert", "Autore inserito con id: " + aut.Id);
+        nm.NavigateTo("autori");
+    }
+}

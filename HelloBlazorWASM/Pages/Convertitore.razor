@@ -1,0 +1,19 @@
+﻿@page "/converti"
+
+<h3>Convertitore</h3>
+
+<p>Celsius:</p>
+<input type="number" @bind="@Celsius" />
+<button class="btn btn-outline-warning" @onclick="@Converti">Converti</button>
+<h3>Fahrenheit: @Fahr</h3>
+
+@code {
+    public double Celsius = 0;
+    public double Fahr = 0;
+
+    public void Converti()
+    {
+        Fahr = (Celsius * 9 / 5) + 32;
+    }
+
+}
