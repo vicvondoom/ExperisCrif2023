@@ -19,6 +19,15 @@ namespace BibliotecaAPI
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+            builder.Services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(
+                    policy =>
+                    {
+                        policy.WithOrigins("https://localhost:7076");
+                    });
+            });
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -32,13 +41,14 @@ namespace BibliotecaAPI
 
             app.UseAuthorization();
 
-            // Qui apro le policy CORS per far entrqare chiunque!
-            app.UseCors(cors =>
-                cors.AllowAnyMethod()
-                .AllowAnyHeader()
-                .AllowCredentials()
-                .SetIsOriginAllowed(origin => true)
-                );
+            //// Qui apro le policy CORS per far entrare chiunque!
+            //app.UseCors(cors =>
+            //    cors.AllowAnyMethod()
+            //    .AllowAnyHeader()
+            //    .AllowCredentials()
+            //    .SetIsOriginAllowed(origin => true)
+            //    );
+            app.UseCors();
 
             app.MapControllers();
 
