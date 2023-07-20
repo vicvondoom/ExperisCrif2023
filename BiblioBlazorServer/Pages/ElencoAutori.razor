@@ -10,16 +10,21 @@
         <th>Nome</th>
         <th>Cognome</th>
         <th></th>
+        <th></th>
     </tr>
     @foreach(var a in autori)
     {
         <tr>
             <td>@a.Nome</td>
             <td>@a.Cognome</td>
-            <th>
-                <button type="button" class="small btn btn-outline-danger" 
+            <td>
+                <a class="btn btn-outline-warning"
+                   href="modificaautore/@a.Id">Modifica</a>
+            </td>
+            <td>
+                <button type="button" class="btn btn-outline-danger"
                     @onclick="( () => Elimina(a.Id) )">Elimina</button>
-            </th>
+            </td>
         </tr>
     }
 </table>

@@ -1,0 +1,40 @@
+﻿@page "/modificaautore/{id:int}"
+@using BiblioBlazorServer.Models;
+@inject BibliotecaDbContext ctx;
+@inject IJSRuntime js;
+@inject NavigationManager nm;
+
+<h3>ModificaAutore</h3>
+
+<EditForm Model="@aut" OnValidSubmit="@Update">
+    <div class="form-group">
+        <label>Nome:</label>
+        <InputText @bind-Value="@aut.Nome" />
+    </div>
+    <div class="form-group">
+        <label>Cognome:</label>
+        <InputText @bind-Value="@aut.Cognome" />
+    </div>
+    <button type="submit" class="btn btn-success">Salva</button>
+</EditForm>
+
+@code {
+    [Parameter]
+    public int id { get; set; }
+
+    public Autori aut { get; set; } = new();
+
+    // Evento che scatta quando ricevo i parametri
+    protected override async Task OnParametersSetAsync()
+    {
+        aut = await ctx.Autoris.FindAsync(id);
+    }
+
+    public async Task Update()
+    {
+        ctx.Autoris.Update(aut);
+        await ctx.SaveChangesAsync();
+        await js.InvokeVoidAsync("alert", "Autore modificato!");
+        nm.NavigateTo("autori");
+    }
+}
