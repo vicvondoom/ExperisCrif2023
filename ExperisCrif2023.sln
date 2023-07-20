@@ -89,6 +89,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloBlazorWASMHosted.Share
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BiblioBlazorServer", "BiblioBlazorServer\BiblioBlazorServer.csproj", "{7B5BF004-6098-4CC9-8688-746AA71C75A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BiblioBlazorWasm", "BiblioBlazorWasm\BiblioBlazorWasm.csproj", "{6708AF85-5393-4488-94EE-18EBA85BA4D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -267,6 +269,10 @@ Global
 		{7B5BF004-6098-4CC9-8688-746AA71C75A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B5BF004-6098-4CC9-8688-746AA71C75A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B5BF004-6098-4CC9-8688-746AA71C75A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6708AF85-5393-4488-94EE-18EBA85BA4D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6708AF85-5393-4488-94EE-18EBA85BA4D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6708AF85-5393-4488-94EE-18EBA85BA4D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6708AF85-5393-4488-94EE-18EBA85BA4D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

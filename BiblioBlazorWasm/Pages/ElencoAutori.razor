@@ -1,0 +1,66 @@
+﻿@page "/autori"
+
+@using BiblioBlazorWasm.Models;
+
+@inject WebAPIHelper wah;
+@inject IJSRuntime js;
+
+<h3>Elenco Autori</h3>
+
+<NavLink class="nav-link" href="nuovoautore">Nuovo</NavLink>
+
+@if(autori.Count == 0)
+{
+    <p>Caricamento in corso...</p>
+}
+else
+{
+    <table class="table">
+        <tr>
+            <th>Nome</th>
+            <th>Cognome</th>
+            <th></th>
+            <th></th>
+        </tr>
+        @foreach(var a in autori)
+        {
+            <tr>
+                <td>@a.Nome</td>
+                <td>@a.Cognome</td>
+                <td>
+                    <a class="btn btn-outline-warning"
+                       href="modificaautore/@a.Id">Modifica</a>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-outline-danger"
+                        @onclick="( () => Elimina(a.Id) )">Elimina</button>
+                </td>
+            </tr>
+        }
+    </table>    
+}
+
+
+@code {
+    List<AutorePOCO> autori = new List<AutorePOCO>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        wah.ChangeUrl("https://localhost:7287/api/autori");
+        autori = await wah.Get<AutorePOCO>();
+    }
+
+    private async Task Elimina(int id)
+    {
+        bool res = await js.InvokeAsync<bool>("confirm", "Vuoi eliminare questo record?");
+        if(res)
+        {
+            //var autore_delete = ctx.Autoris.Find(id);
+            //ctx.Autoris.Remove(autore_delete);
+            //await ctx.SaveChangesAsync();
+            await js.InvokeVoidAsync("alert", "Autore eliminato con successo!");
+            await OnInitializedAsync();
+        }
+
+    }
+}

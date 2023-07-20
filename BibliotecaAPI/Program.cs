@@ -32,6 +32,13 @@ namespace BibliotecaAPI
 
             app.UseAuthorization();
 
+            // Qui apro le policy CORS per far entrqare chiunque!
+            app.UseCors(cors =>
+                cors.AllowAnyMethod()
+                .AllowAnyHeader()
+                .AllowCredentials()
+                .SetIsOriginAllowed(origin => true)
+                );
 
             app.MapControllers();
 
